@@ -1,0 +1,20 @@
+.loginContainer {
+  width: 50%;
+  height: 50%;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  box-shadow: 0 0 10px black;
+  background-color: white;
+  max-width: 380px;
+  min-height: 350px;
+}
+
+.loginContainerHeader {
+  padding-bottom: 50px;
+  font-family: "Roboto";
+}
