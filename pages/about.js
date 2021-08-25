@@ -1,13 +1,19 @@
-import Head from "next/head";
 import Header from "../components/Header";
 import styles from "../styles/Home.module.css";
+import withContext from "../store";
 
-const About = () => {
+
+const About = ( props ) => {
+  const { store } = props;
+
+  // const res = store.auth.register( 'email@email.com', 'username', 'password');
+
   return (
     <>
       <Header headerText="About Us" />
       <div className={styles.aboutUsContainer}>
         <h1>What is Agenda?</h1>
+        <h1>{ props.store.test }</h1>
         <p>
           Agenda will allow for more efficient meetings by estabilshing meeting
           topics in advance, establishing each topics value, and then deciding
@@ -25,4 +31,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default withContext( About );
